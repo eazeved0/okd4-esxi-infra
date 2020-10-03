@@ -8,7 +8,7 @@ terraform {
 }
 
 resource "null_resource" "esxi_network" {
-  # These triggers are just a workaround to be able to use variables in the destroy provisioner
+  # These triggers are just a workaround to be able to use variables in the destroy provisioner (testing)
   triggers = {
     always_run = "${timestamp()}"
     netname = var.okd_network
